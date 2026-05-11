@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: 22
       - run: npm install -g expo-cli
-      - run: npm npm install
+      - run: npm install
       - run: npx expo prebuild --clean
       - run: cd android && ./gradlew assembleDebug
       - name: Upload APK
